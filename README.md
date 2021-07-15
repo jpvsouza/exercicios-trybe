@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositório conta todas as atividades de aprendizagem desenvolvidas por _[João Paulo Veloso](www.linkedin.com/in/joaopauloveloso)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório conta todas as atividades de aprendizagem desenvolvidas por [João Paulo Veloso](www.linkedin.com/in/joaopauloveloso) enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe Ã© uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa sÃ³ paga quando conseguir um bom trabalho."_
 
