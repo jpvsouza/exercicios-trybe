@@ -1,16 +1,16 @@
 # Trybe
 
-Este repositório conta todas as atividades de aprendizagem desenvolvidas por [João Paulo Veloso](https://www.linkedin.com/in/joaopauloveloso/) enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório conta todas as atividades de aprendizagem desenvolvidas por _[João Paulo Veloso](https://www.linkedin.com/in/joaopauloveloso/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias Ã¡geis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web :white_check_mark:
+## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 
 ##### Bloco 1: Introdução - Unix & Shell
 
-- [ ] 1-3: _Unix & Shell- Part 1_
+- [X] 1-3: _Unix & Shell- Part 1_
 - [ ] 1-4: _Unix & Shell- Part 2_
 
 ##### Bloco 2: Git & GitHub
