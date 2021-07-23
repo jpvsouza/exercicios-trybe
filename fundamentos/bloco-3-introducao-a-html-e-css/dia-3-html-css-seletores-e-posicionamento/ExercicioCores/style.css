@@ -1,0 +1,32 @@
+div:hover{
+  border-style: outset;
+  border-color: blue;
+}
+
+.primaria{
+  background-color: red;
+}
+
+.secundaria{
+  background-color: orange;
+}
+
+.complementar{
+  background-color: violet;
+}
+
+.escura{
+  background-color: brown;
+}
+
+.clara{
+  background-color: yellow;
+}
+
+.tamanho{
+  padding: 10px;
+}
+
+.impar{
+  font-style: italic;
+}
