@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let titulo = document.createElement("h1");
+      titulo.innerText = "Exercício 5.2 - JavaScript DOM";
+      titulo.className = "title"
+      document.body.appendChild(titulo);
+
+      let principal = document.createElement("main");
+      principal.className = "main-content";
+      principal.style.backgroundColor = "green";
+      document.body.appendChild(principal);
+
+      let secao = document.createElement("section");
+      secao.className = "center-content";
+      document.querySelector("main").appendChild(secao);
+
+      let paragrafo = document.createElement("p");
+      paragrafo.innerHTML = "Texto que foi colocado dentro do paragrafo que está dentro da secao que ta dentro da main";
+      document.querySelector("section").appendChild(paragrafo);
+
+      let esquerda = document.createElement("section");
+      esquerda.className = "left-content";
+      document.querySelector("main").appendChild(esquerda);
+
+      let direita = document.createElement("section");
+      direita.className = "right-content";
+      document.querySelector("main").appendChild(direita);
+
+      let imagem = document.createElement("img");
+      imagem.className = "small-image";
+      imagem.src = "https://picsum.photos/200";
+      document.querySelector("section").appendChild(imagem);
+
+      let lista = document.createElement("ul");
+      document.querySelectorAll("section")[2].appendChild(lista);
+
+      for (let index = 0; index < 11; index += 1) {
+        let itensLista = document.createElement("li");
+        itensLista.innerText = parseInt(index, 10);
+        document.querySelector("ul").appendChild(itensLista);
+      }
+      
+      let primeira = document.createElement("h3");
+      primeira.className = "description";
+      document.querySelector("main").appendChild(primeira);
+
+      let segunda = document.createElement("h3");
+      segunda.className = "description";
+      document.querySelector("main").appendChild(segunda);
+
+      let terceira = document.createElement("h3");
+      terceira.className = "description";
+      document.querySelector("main").appendChild(terceira);
+
+      document.querySelector("main").removeChild(esquerda);
+
+      document.querySelectorAll("section")[1].style.marginRight = "auto";
+
+      let listaDosNumeros = [];
+      listadosdocument.querySelectorAll("li");
+
+      for (num of listaDosNumeros) {
+        console.log(num.innerText);
+        if (num.innerText.includes(9) || num.innerText.includes(10)) {
+          listaDosNumeros.removeChild(num);
+        }
+      }
+
+    </script>
+  </body>
+</html>
