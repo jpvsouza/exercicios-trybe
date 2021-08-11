@@ -21,10 +21,30 @@ function createMonth() {
     let dia = dezDaysList[index];
     let todosDias = document.createElement("li");
     todosDias.innerHTML = dia;
+    todosDias.className = "day";
+
+    if (dezDaysList[index] == 24 || dezDaysList[index] == 25 || dezDaysList[index] == 31) {
+      todosDias.className += " holiday";
+    }
+    if (dezDaysList[index] == 4 || dezDaysList[index] == 11 || dezDaysList[index] == 18 || dezDaysList[index] == 25) {
+      todosDias.className += " friday";
+    }
+
 
     daysList.appendChild(todosDias);
   }
 }
 
 createMonth();
+
+function criaBotao(Feriados) {
+  let botao = document.createElement("button");
+  botao.id = "btn-holiday";
+  botao.innerHTML = "Botão do feriado"
+
+  let div = document.querySelector(".buttons-container");
+  div.appendChild(botao);
+}
+
+criaBotao();
 
