@@ -3,6 +3,8 @@ createMonth();
 criaBotaoFeriado();
 criaBotaoSexta();
 zoom();
+mostraFeriado();
+mostraSexta();
 tarefa("cozinhar");
 tarefa("lavar louça");
 tarefa("fazer janta");
@@ -20,8 +22,6 @@ function createDaysOfTheWeek() {
       weekDaysList.appendChild(dayListItem);
     };
   };
-  
-  
   
 function createMonth() {
   let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
@@ -45,9 +45,7 @@ function createMonth() {
   }
 }
 
-
-
-function criaBotaoFeriado(Feriados) {
+function criaBotaoFeriado() {
   let botao = document.createElement("button");
   botao.id = "btn-holiday";
   botao.innerHTML = "Feriados"
@@ -55,8 +53,6 @@ function criaBotaoFeriado(Feriados) {
   let div = document.querySelector(".buttons-container");
   div.appendChild(botao);
 }
-
-
 
 function criaBotaoSexta(Sexta) {
   let botao = document.createElement("button");
@@ -66,8 +62,6 @@ function criaBotaoSexta(Sexta) {
   let div = document.querySelector(".buttons-container");
   div.appendChild(botao);
 }
-
-
 
 function zoom() {
   let amplia = document.querySelectorAll(".day");
@@ -81,7 +75,6 @@ function zoom() {
   }
 }
 
-
 function tarefa(nomeDaTarefa) {
   let novaTarefa = document.createElement("span");
   novaTarefa.innerHTML = nomeDaTarefa + "<br>";
@@ -89,26 +82,38 @@ function tarefa(nomeDaTarefa) {
   div.appendChild(novaTarefa);
 }
 
-
-
 function mostraFeriado() {
   let botao = document.querySelector("#btn-holiday");
   botao.addEventListener("click", function(){
     let feriado = document.querySelectorAll(".holiday");
     for (let index = 0; index < feriado.length; index +=1) {
-      feriado[index].style.backgroundColor = "blue";
+      if (feriado[index].style.backgroundColor === "") {
+        feriado[index].style.backgroundColor = "red";
+      }
+      else {
+        feriado[index].style.backgroundColor = "";
+      }
     }
   })
 }
 
-function escondeFeriado() {
-  let botao = document.querySelector("#btn-holiday");
-  botao.addEventListener("click", function(){
-    let feriado = document.querySelectorAll(".holiday");
-    for (let index = 0; index < feriado.length; index +=1) {
-      feriado[index].style.backgroundColor = "";
+function mostraSexta() {
+  let botao = document.querySelector("#btn-friday");
+  botao.addEventListener("click", function() {
+    let sextas = document.querySelectorAll(".friday");
+    for (let index = 0; index < sextas.length; index += 1) {
+      if (sextas[index].style.backgroundColor === "") {
+        sextas[index].style.backgroundColor = "blue";
+      }
+      else {
+        sextas[index].style.backgroundColor = "";
+      }
+      
     }
   })
 }
+
+
+
 
 
