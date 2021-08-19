@@ -11,3 +11,12 @@ for (let index = 0; index < arrayTextoEstado.length; index += 1) {
 
   estados.appendChild(estado);
 }
+
+let botao = document.getElementById("enviar");
+
+botao.addEventListener("click", stop);
+
+function stop(evento) {
+  evento.preventDefault();
+}
+
