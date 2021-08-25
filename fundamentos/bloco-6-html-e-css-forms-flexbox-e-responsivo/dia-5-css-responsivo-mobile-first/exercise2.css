@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media screen and (max-width: 460px) {
+    header p {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 25px;
+    }
+    
+    body {
+      padding: 10px;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
