@@ -6,6 +6,10 @@ html {
   }
 
   @media screen and (max-width: 460px) {
+    body {
+      background-color: burlywood;
+    }
+
     header p {
       text-align: center;
       font-size: 30px;
@@ -26,5 +30,26 @@ html {
 
     p {
       text-align: justify;
+    }
+  }
+
+  @media screen and (max-width:1300px) and (min-width:461px) {
+    body {
+      background-color: cornsilk;
+    }
+
+    header p {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    header nav ul {
+      display: flex;
+      justify-content:space-between;
+      max-width: 40%;
+    }
+
+    .aside-one .aside-two {
+      
     }
   }
