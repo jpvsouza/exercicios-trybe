@@ -5,6 +5,6 @@ const maior = array.reduce((acumulador ,numero) => {
         return acumulador;
     }
     else return numero;
-})
+}, 21)
 
 console.log(maior);
