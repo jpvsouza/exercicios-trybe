@@ -8,11 +8,12 @@ const arrays = [
 ];
 
 const lista = arrays.reduce((acumula, elemento) => {
-    acumula.push(elemento);
+    let num = acumula.concat(elemento);
+    return num;
 })
 
 function flatten() {
-    console.log(lista);
+  return lista;
 }
 
 assert.deepStrictEqual(flatten(), ['1', '2', '3', true, 4, 5, 6]);
