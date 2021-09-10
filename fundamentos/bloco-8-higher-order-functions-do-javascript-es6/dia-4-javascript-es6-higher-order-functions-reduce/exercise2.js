@@ -66,6 +66,10 @@ const books = [
 // Adicione o código do exercício aqui:
 // 2 - Crie uma string com os nomes de todas as pessoas autoras.
 
+const reduceNames = books.map((elemento) => elemento.author.name).reduce((acumula, nome)=>{
+  return `${acumula}, ${nome}`;
+})+'.';
+
 const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
-assert.strictEqual(reduceNames(), expectedResult);
+assert.strictEqual(reduceNames, expectedResult);
