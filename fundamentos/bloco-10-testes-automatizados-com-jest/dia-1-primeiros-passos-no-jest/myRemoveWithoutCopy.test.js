@@ -1,5 +1,5 @@
-const { test, expect } = require('@jest/globals');
-const { describe } = require('yargs');
+// const { test, expect } = require('@jest/globals');
+// const { describe } = require('yargs');
 const myRemoveWithoutCopy = require('./myRemoveWithoutCopy');
 
 describe('Testes da função myRemoveWithoutCopy', () => {

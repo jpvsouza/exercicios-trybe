@@ -1,6 +1,6 @@
-const { test, expect } = require('@jest/globals');
-const exp = require('constants');
-const { describe } = require('yargs');
+// const { test, expect } = require('@jest/globals');
+// const exp = require('constants');
+// const { describe } = require('yargs');
 const myFizzBuzz = require('./myFizzBuzz');
 
 describe('Teste da função myFizzBuzz', () => {

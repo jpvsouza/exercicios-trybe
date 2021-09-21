@@ -1,5 +1,5 @@
-const { test, expect } = require('@jest/globals');
-const { describe } = require('yargs');
+// const { test, expect } = require('@jest/globals');
+// const { describe } = require('yargs');
 const myRemove = require('./myRemove');
 
 describe('Testes da função myRemove', () => {
@@ -16,6 +16,6 @@ describe('Testes da função myRemove', () => {
     });
     test('Testa se o array não vai remover nada ao passar o parâmetro 5', () => {
         const arrayOriginal = [1, 2, 3, 4];
-        expect(myRemove([1, 2, 3, 4], 3).toEqual(arrayOriginal));
+        expect(myRemove([1, 2, 3, 4], 5)).toEqual(arrayOriginal);
     });
 });
